@@ -27,7 +27,7 @@ const PasswordGenerator = () => {
     if (!Number.isNaN(numPasswords) && numPasswords > 0) {
       const newPasswords = [];
       for (let i = 0; i < numPasswords; i++) {
-        const name = prompt(`Hva skal det ${i + 1}. passordet være?`);
+        const name = prompt(`Hvor skal det ${i + 1}. passordet være?`);
         const password = generatePassword();
         newPasswords.push({ name, password });
       }
